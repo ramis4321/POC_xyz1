@@ -1,0 +1,102 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "POC.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/POC.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/POC.Core.dll": {}
+        }
+      },
+      "POC.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "POC.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/POC.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/POC.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "POC.Core/1.0.0": {
+      "type": "project",
+      "path": "../POC.Core/POC.Core.csproj",
+      "msbuildProject": "../POC.Core/POC.Core.csproj"
+    },
+    "POC.Data/1.0.0": {
+      "type": "project",
+      "path": "../POC.Data/POC.Data.csproj",
+      "msbuildProject": "../POC.Data/POC.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.1": [
+      "POC.Data >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\NaveedA\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
+    "restore": {
+      "projectUniqueName": "C:\\Downloads\\POC_01-master\\POC_xyz1\\Src\\Core\\POC.Service\\POC.Service.csproj",
+      "projectName": "POC.Service",
+      "projectPath": "C:\\Downloads\\POC_01-master\\POC_xyz1\\Src\\Core\\POC.Service\\POC.Service.csproj",
+      "packagesPath": "C:\\Users\\NaveedA\\.nuget\\packages\\",
+      "outputPath": "C:\\Downloads\\POC_01-master\\POC_xyz1\\Src\\Core\\POC.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\NaveedA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "projectReferences": {
+            "C:\\Downloads\\POC_01-master\\POC_xyz1\\Src\\Core\\POC.Data\\POC.Data.csproj": {
+              "projectPath": "C:\\Downloads\\POC_01-master\\POC_xyz1\\Src\\Core\\POC.Data\\POC.Data.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.1": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}
